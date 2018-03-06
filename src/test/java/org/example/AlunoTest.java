@@ -1,4 +1,4 @@
-package orga.sample;
+package org.example;
 
 import org.junit.Test;
 
@@ -17,9 +17,11 @@ public class AlunoTest {
 
     @Test
     public void mediaDeDuasNotas() {
-        Aluno aluno = new Aluno("Cinco", Arrays.asList(5.0, 5.0));
+        Aluno aluno5 = new Aluno("Cinco", Arrays.asList(5.0, 5.0));
+        Aluno aluno2 = new Aluno("Dois", Arrays.asList(3.0, 1.0));
 
-        assertEquals(true, Double.valueOf(5.0).equals(aluno.getMedia()));
+        assertEquals(true, Double.valueOf(5.0).equals(aluno5.getMedia()));
+        assertEquals(true, Double.valueOf(2.0).equals(aluno2.getMedia()));
     }
 
 }
